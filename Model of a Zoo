@@ -1,0 +1,35 @@
+// Abstract class
+abstract class Animal(val name: String) {
+    abstract val legs: Int
+    abstract fun makeSound(): String
+}
+
+// Dog subclass
+class Dog(name: String) : Animal(name) {
+    override val legs: Int = 4
+
+    override fun makeSound(): String {
+        return "Woof!"
+    }
+}
+
+// Cat subclass
+class Cat(name: String) : Animal(name) {
+    override val legs: Int = 4
+
+    override fun makeSound(): String {
+        return "Meow!"
+    }
+}
+
+fun main() {
+
+    val animals: List<Animal> = listOf(
+        Dog("Buddy"),
+        Cat("Whiskers")
+    )
+
+    for (animal in animals) {
+        println("${animal.name} says ${animal.makeSound()}")
+    }
+}
