@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Grade Calculator</h2>
+
+<table id="gradeTable">
+    <tr>
+        <th>Name</th>
+        <th>Score</th>
+        <th>Grade</th>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
